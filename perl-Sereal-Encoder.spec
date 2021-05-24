@@ -4,7 +4,7 @@
 #
 Name     : perl-Sereal-Encoder
 Version  : 4.018
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-Encoder-4.018.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-Encoder-4.018.tar.gz
 Summary  : 'Fast, compact, powerful binary serialization'
