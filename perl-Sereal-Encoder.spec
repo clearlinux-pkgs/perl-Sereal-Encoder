@@ -4,7 +4,7 @@
 #
 Name     : perl-Sereal-Encoder
 Version  : 4.018
-Release  : 19
+Release  : 20
 URL      : https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-Encoder-4.018.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-Encoder-4.018.tar.gz
 Summary  : 'Fast, compact, powerful binary serialization'
@@ -19,6 +19,7 @@ BuildRequires : perl(Test::Differences)
 BuildRequires : perl(Test::LongString)
 BuildRequires : perl(Test::Warn)
 BuildRequires : pkgconfig(libzstd)
+Patch1: build.patch
 
 %description
 No detailed description available
@@ -45,6 +46,7 @@ perl components for the perl-Sereal-Encoder package.
 %prep
 %setup -q -n Sereal-Encoder-4.018
 cd %{_builddir}/Sereal-Encoder-4.018
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -87,6 +89,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/Sereal/Encoder.pm
-/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/Sereal/Encoder/Constants.pm
-/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/Sereal/Encoder/Encoder.so
+/usr/lib/perl5/*

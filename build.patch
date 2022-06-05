@@ -1,0 +1,11 @@
+--- Sereal-Encoder-4.018/inc/Sereal/BuildTools.pm~	2020-07-09 13:50:11.000000000 +0000
++++ Sereal-Encoder-4.018/inc/Sereal/BuildTools.pm	2022-06-05 18:44:27.572041647 +0000
+@@ -183,7 +183,7 @@
+             # -Werror= introduced in GCC 4.3
+             # For trapping C++ // comments we would need -std=c89 (aka -ansi)
+             # but that may be asking too much of different platforms.
+-            $OPTIMIZE .= ' -Werror=declaration-after-statement ';
++            # $OPTIMIZE .= ' -Werror=declaration-after-statement ';
+         }
+ 
+     }
