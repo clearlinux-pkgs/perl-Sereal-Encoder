@@ -5,7 +5,7 @@
 #
 Name     : perl-Sereal-Encoder
 Version  : 5.004
-Release  : 29
+Release  : 30
 URL      : https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-Encoder-5.004.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-Encoder-5.004.tar.gz
 Summary  : 'Fast, compact, powerful binary serialization'
